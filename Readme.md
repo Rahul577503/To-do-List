@@ -30,9 +30,9 @@ This project is a simple Todo List web application created using HTML, CSS, and 
 
 
 ## Screenshots
+![Screenshot from 2023-07-17 13-29-45](https://github.com/Rahul577503/To-do-List/assets/82811506/a972d931-c011-45dc-9761-9d8abbd3bf0d)
 
-![[Screenshot from 2023-07-17 13-30-28.png]]
-![[Screenshot from 2023-07-17 13-29-45.png]]
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
