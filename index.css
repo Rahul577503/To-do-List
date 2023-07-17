@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todos {
+  border: 3px solid rgba(57,129,169,1);
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.589);
+}
+
+#todos > h1 {
+  margin: 10px 0px 0px 0px;
+  padding: 10px 20px 5px 30px;
+  border-bottom: 1px solid black;
+}
+
+.addTodo {
+  padding: 10px 15px;
+}
+
+#todoList {
+  padding: 0px;
+  margin: 0px;
+}
+
+#todoList > li {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 5px;
+  margin: 0px;
+  list-style: none;
+}
+
+#todoList > li > input[type=checkbox], #todoList > li > label {
+  padding: 5px 10px;
+}
+
+#todoList > li > input[type=checkbox] {
+  flex: 0.1;
+}
+
+#todoList > li >  label {
+  flex: 10;
+}
+
+#todoList > li > input[type=text] {
+  flex: 10;
+  margin: 5px 10px;
+  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+#todoList > li > button {
+  flex: 1;
+  margin: 5px;
+}
+
+.checked > label {
+  text-decoration: line-through;
+}
+
+.addTodo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.addTodo > input[type=text] {
+  flex: 11;
+
+  border: none;
+  padding: 5px 1px;
+  margin: 0px;
+  font-size: 1em;
+  width: 80%;
+  border-bottom: 2px solid rgb(162, 166, 173);
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  transition: border linear 0.5s;
+  -webkit-transition: border linear 0.5s;
+}
+
+.addTodo input[type=text]:focus{
+  outline: none;
+  border-bottom: 2px solid rgb(114, 158, 234);
+}
+
+.addTodo > button {  
+  margin: 5px 5px 5px 10px;
+  flex: 1;
+  padding:10px 10px;
+  background-color: hotpink;
+  border:none;
+  border-radius: 5px;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.delete{
+  margin: 5px 5px 5px 10px;
+  flex: 1;
+  padding:10px 10px;
+  background-color: red;
+  border:none;
+  border-radius: 5px;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#todoList li:nth-child(even) {
+   background-color: rgba(114, 158, 234, 0.3);
+}
+ 
+
+@media screen and (max-width: 600px) {
+  body {
+    top: -30%;
+  }
+
+  #todos {
+    width: 90%;
+  }
+
+  .addTodo > input[type=text] {
+    width: 70%;
+  }
+}
